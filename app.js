@@ -25,7 +25,7 @@ app.use(
       secret: 'my_keyboard_cat', 
       resave: false,
       saveUninitialized: true,
-      store: MongoStore.create({ mongoUrl: 'mongodb+srv://dbUser:dbUserPass123@cluster0.lmmul.mongodb.net/smartedu-db?retryWrites=true&w=majority&appName=Cluster0' })
+      store: MongoStore.create({ mongoUrl: 'mongodb+srv://@cluster0.lmmul.mongodb.net/smartedu-db?retryWrites=true&w=majority&appName=Cluster0' })
     })
   );
   app.use(flash());
