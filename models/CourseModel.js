@@ -8,8 +8,8 @@ const CourseSchema = new Schema({
  description: { type: String, required:true, trim:true},
  date: { type: Date, default: Date.now },
  slug: {type: String, unique:true},
- category: {type:  mongoose.Schema.Types.ObjectId,
- ref: 'CategoryModel'}
+ user :{type:  mongoose.Schema.Types.ObjectId, ref: 'User'},
+ category: {type:  mongoose.Schema.Types.ObjectId,ref: 'CategoryModel'}
 
 })
 
