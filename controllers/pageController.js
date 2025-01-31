@@ -8,7 +8,7 @@ const app = express();
 
 exports.getIndexPage = async(req, res) => {
 
-  const courses = await Course.find();
+  const courses =  Course.find();
   const totalCourses = await Course.find().countDocuments();
   const totalStudents = await User.countDocuments({role: 'student'});
   const totalTeachers = await User.countDocuments({role: 'teacher'});
