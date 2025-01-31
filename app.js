@@ -39,7 +39,7 @@ app.use(
     })
   );
 mongoose
-  .connect('mongodb://localhost/smartedu-db')
+  .connect('mongodb+srv://dbUser:dbUserPass123@cluster0.lmmul.mongodb.net/smartedu-db?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('DB Connected!'));
 
   app.use('*', (req, res, next) => {
